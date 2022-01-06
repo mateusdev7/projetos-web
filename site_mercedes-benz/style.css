@@ -28,10 +28,8 @@ h3 {
   max-width: 100%;
   display: block;
   border-radius: 5px;
-}
-
-.carro-box {
-  width: 500px;
+  object-fit: cover;
+  height: 100%;
 }
 
 .header {
@@ -50,6 +48,7 @@ h3 {
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .menu a {
@@ -135,6 +134,7 @@ h3 {
   align-self: center;
   text-transform: uppercase;
   background-image: url("./img/onda.svg");
+  /* word-break: break-all; */
 }
 
 #label-vantagens {
@@ -145,6 +145,7 @@ h3 {
   align-self: center;
   text-transform: uppercase;
   background-image: url("./img/onda.svg");
+  /* word-break: break-all; */
 }
 
 .rodape {
@@ -154,4 +155,97 @@ h3 {
   padding: 2.5rem 2.5rem;
   text-align: center;
   margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .carro_um {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+#label-visual,
+#label-vantagens {
+  font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+  .header {
+    gap: 20px;
+  }
+  .menu {
+    gap: 20px;
+  }
+  .menu a {
+    padding: 0.3rem 1rem;
+  }
+  #label-visual,
+  #label-vantagens {
+    font-size: 2rem;
+  }
+  #label-introducao {
+    font-size: 1.5rem;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+  .botao {
+    padding: 0.5rem 1rem;
+  }
+  .logo_mercedes {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 690px) {
+  .menu {
+    gap: 20px;
+  }
+  .menu a {
+    padding: 0.3rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    justify-items: start;
+  }
+  .introducao p {
+    text-align: left;
+  }
+  .conteudo-visual,
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+  #label-visual {
+    text-align: center;
+  }
+  #label-vantagens {
+    text-align: center;
+    grid-row: 1;
+  }
+  .introducao::before {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo_mercedes {
+    width: 200px;
+    margin-left: 30px;
+  }
+  .menu a {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .botao {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  #label-introducao {
+    font-size: 1.2rem;
+  }
+  #label-visual, #label-vantagens {
+    font-size: 1.5rem;
+  }
 }
