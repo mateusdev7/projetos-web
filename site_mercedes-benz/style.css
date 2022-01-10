@@ -157,6 +157,8 @@ h3 {
   margin-top: 30px;
 }
 
+/* Break Points */
+
 @media (max-width: 1000px) {
   .carro_um {
     object-fit: cover;
@@ -181,7 +183,7 @@ h3 {
   }
   #label-visual,
   #label-vantagens {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   #label-introducao {
     font-size: 1.5rem;
@@ -190,7 +192,8 @@ h3 {
     font-size: 1rem;
   }
   .botao {
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
   }
   .logo_mercedes {
     margin-top: -30px;
@@ -203,6 +206,15 @@ h3 {
   }
   .menu a {
     padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+  .logo_mercedes {
+    max-width: 290px;
+    margin-left: 30px;
+  }
+  #label-visual,
+  #label-vantagens {
+    font-size: 1.8rem;
   }
 }
 
@@ -213,7 +225,6 @@ h3 {
   .introducao p {
     text-align: left;
   }
-  .conteudo-visual,
   .conteudo {
     grid-template-columns: 1fr;
   }
@@ -231,7 +242,7 @@ h3 {
 
 @media (max-width: 380px) {
   .logo_mercedes {
-    width: 200px;
+    width: 230px;
     margin-left: 30px;
   }
   .menu a {
