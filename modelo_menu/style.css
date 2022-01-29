@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #242833;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.8rem 2rem;
+  border-bottom: 0.5px #474d59 solid;
+}
+
+.logo_marvel {
+  display: block;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li::before {
+  top: 5px;
+  left: 5px;
+  content: "";
+  border-radius: 10px;
+  width: 2px;
+  height: 15px;
+  background-color: #fd3500;
+  position: absolute;
+}
+
+.menu a {
+  color: #b2b8bf;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 1.1;
+  padding: 1rem;
+}
+
+.menu a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+#login {
+  margin-left: 10px;
+}
+
+#login a {
+    color: white;
+    padding: 0.4rem 0.7rem;
+    background-color: #fd3500;
+    border-radius: 10px;
+}
