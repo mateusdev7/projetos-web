@@ -1,7 +1,7 @@
 .section_contato {
-  padding: 40px 20px;
+  padding: 120px 20px 60px 20px;
   display: grid;
-  grid-template-columns: 6fr 7fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   max-width: 1200px;
   gap: 120px;
@@ -67,7 +67,7 @@
 
 @media (max-width: 670px) {
   .section_contato {
-    justify-items: center;
+    justify-items: start;
     gap: 20px;
   }
   .contato_imagem_container::before {
@@ -88,7 +88,7 @@
 
 @media (max-width: 313px) {
   .contato_imagem_container {
-    gap: 30px;
+    gap: 35px;
   }
 }
 
@@ -98,9 +98,6 @@
     padding: 0px 20px;
   }
   .contato_imagem_container {
-    padding: 0px 0px;
-  }
-  .section_contato {
-    justify-content: start;
+    padding: 0px 20px;
   }
 }
